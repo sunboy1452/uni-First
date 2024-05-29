@@ -1,0 +1,111 @@
+@import '@/style/each.scss';
+@import '@/style/my.scss';
+@import '@/style/flex.scss';
+@import '@/style/iconfont.css';
+@import '@/style/color.scss';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	width: 0 !important;
+	height: 0 !important;
+	color: transparent !important;
+	display: none;
+}
+
+button::after {
+	border: none;
+}
+
+// 主题边距,一般距离左右屏幕边距,24
+.wrap {
+	padding: 20rpx;
+}
+.wrap-0-20 {
+	padding: 0 20rpx;
+}
+.wrap-10-20 {
+	padding: 10rpx 20rpx;
+}
+/* 宽高 */
+.wh-full {
+	width: 100%;
+	height: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.w-full {
+	width: 100%;
+}
+
+.ws-np {
+	white-space: nowrap;
+}
+.display-none {
+	display: none !important;
+}
+
+.inline-block {
+	display: inline-block;
+}
+.block {
+	display: block;
+}
+.o-h {
+	overflow: hidden;
+}
+// 价格
+.my-price {
+	font-size: 36rpx;
+	color: #ff6a6c;
+	line-height: 1;
+	font-weight: 580;
+}
+.my-price:before {
+	content: '￥';
+	font-size: 24rpx;
+}
+
+.left-auto {
+	margin-left: auto;
+}
+.right-auto {
+	margin-right: auto;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.fixed {
+	position: fixed;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.v-html-box {
+	image {
+		max-width: 100% !important;
+	}
+	video {
+		max-width: 100% !important;
+	}
+	font-size: 30rpx;
+	line-height: 40px;
+}

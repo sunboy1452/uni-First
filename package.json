@@ -1,0 +1,21 @@
+{
+  "name": "uniapp-firstu-template",
+  "version": "1.0.0",
+  "description": "-\t组件使用easycom模式 cl-*(可在pages里面修改)",
+  "main": "main.js",
+  "id": "uniapp-firstu-template",
+  "scripts": {
+    "push": "push.bat"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.7"
+  },
+  "uni-app": {
+    "scripts": {}
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

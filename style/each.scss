@@ -1,0 +1,111 @@
+$height: (
+	searchNav: 85rpx,
+	tab: 115px,
+	fixBottomBtn: 100px
+);
+
+$generalColor: (
+	primary: var(--fui-color-primary),
+	success: var(--fui-color-success),
+	warning: var(--fui-color-warning),
+	danger: var(--fui-color-danger),
+	purple: var(--fui-color-purple),
+	title: var(--fui-color-title),
+	section: var(--fui-color-section),
+	subtitle: var(--fui-color-subtitle),
+	label: var(--fui-color-label),
+	minor: var(--fui-color-minor),
+	white: var(--fui-color-white),
+	link: var(--fui-color-link),
+	grey: var(--fui-bg-color-grey)
+);
+@mixin textOver($line: 1) {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+}
+$ellipsis: 1 2 3;
+@each $key in $ellipsis {
+	.text-cut#{$key} {
+		@include textOver($key);
+	}
+}
+@each $key, $color in $generalColor {
+	.text-#{$key} {
+		color: $color;
+	}
+	.bg-#{$key} {
+		background: $color;
+	}
+	.b-c-#{$key} {
+		border: 1rpx solid $color;
+	}
+}
+$fontSizeArr: 18 20 22 24 26 28 30 32 34 36;
+@each $px in $fontSizeArr {
+	.f-#{$px} {
+		font-size: $px + rpx;
+	}
+	.l-h-#{$px} {
+		line-height: $px + rpx;
+	}
+}
+$distanceArr: 2 4 5 6 8 10 12 14 15 16 18 20 22 24 25 26 28 30 32 34 36 40 46 50 88;
+@each $px in $distanceArr {
+	.m-t-#{$px} {
+		margin-top: $px + rpx;
+	}
+	.m-l-#{$px} {
+		margin-left: $px + rpx;
+	}
+	.m-r-#{$px} {
+		margin-right: $px + rpx;
+	}
+	.m-b-#{$px} {
+		margin-bottom: $px + rpx;
+	}
+	.m-tb-#{$px} {
+		margin-top: $px + rpx;
+		margin-bottom: $px + rpx;
+	}
+	.m-#{$px} {
+		margin: $px + rpx;
+	}
+	.p-t-#{$px} {
+		padding-top: $px + rpx;
+	}
+	.p-l-#{$px} {
+		padding-left: $px + rpx;
+	}
+	.p-r-#{$px} {
+		padding-right: $px + rpx;
+	}
+	.p-b-#{$px} {
+		padding-bottom: $px + rpx;
+	}
+	.p-tb-#{$px} {
+		padding-top: $px + rpx;
+		padding-bottom: $px + rpx;
+	}
+	.p-lr-#{$px} {
+		padding-left: $px + rpx;
+		padding-right: $px + rpx;
+	}
+	.p-#{$px} {
+		padding: $px + rpx;
+	}
+	.w-#{$px} {
+		width: $px + rpx;
+		display: inline-block;
+	}
+	.h-#{$px} {
+		height: $px + rpx;
+	}
+	.b-r-#{$px} {
+		border-radius: $px + rpx;
+	}
+}
